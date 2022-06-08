@@ -1,0 +1,26 @@
+<div class="container">
+    <form [formGroup]="forms">
+        IMAGE LINK<input type="text" class="form-control" formControlName="link"> PRODUCT NAME <input type="text" class="form-control" formControlName="name"> PRICE <input type="text" class="form-control" formControlName="price">
+        <button class="btn btn-primary" type="submit" (click)="postpro(forms.value)">ADD PRODUCT</button>
+    </form>
+    <table>
+        <input type="text" [(ngModel)]="searchtext"> {{searchtext}}
+        <tr>
+            <th>image</th>
+            <th>name</th>
+            <th>NEW ARRIVALS</th>
+            <th>sale</th>
+            <th>price</th>
+
+        </tr>
+
+        <tr *ngFor="let t of temparr|searchfilter:'Nike '">
+            <td>
+                <img src="{{t.product_image}}" height="50 " width="50 "></td>
+            <td>{{t.product_name}}</td>
+            <td>{{t.new_arrivals}}</td>
+            <td>{{t.sale}}</td>
+            <td>{{t.product_price}} <button (click)="delete(1) ">Delete</button> </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,59 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+img {
+    height: 60px;
+    width: 80px;
+    position: relative;
+    top: -3px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo p {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.description {
+    font-size: 18px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.f {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 45%;
+}
+
+.svg svg {
+    margin-left: 10px;
+    position: relative;
+    left: 42%;
+}
+
+.copyright {
+    margin: 10px;
+    position: relative;
+    left: 32%;
+    font-weight: bold;
+}
+
+em {
+    color: gold;
+}

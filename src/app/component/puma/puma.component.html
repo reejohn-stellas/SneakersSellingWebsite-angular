@@ -1,0 +1,15 @@
+<h1 class="text-dark"> <img src="../../../assets/images/puma-logo-png-21169.png" style="height:100px;">
+</h1>
+<div class="new_Arrivals">
+    <div class="cardss" *ngFor="let card of temparr|filterstring:'puma'">
+        <div class="card" style="width: 19rem;">
+            <img class="card-img-top" src="{{card.product_image}}" alt="Card image cap" height="250px">
+            <div class="card-body">
+                <h5 class="card-title" style="height: 80px; overflow:hidden">{{card.product_name}}</h5>
+                <p class="card-text">&#8377;{{card.product_price}}</p>
+
+            </div>
+            <button class="btn btn-dark" (click)="postcart([card.product_image,card.product_name,card.product_price])">Add to cart</button>
+        </div>
+    </div>
+</div>

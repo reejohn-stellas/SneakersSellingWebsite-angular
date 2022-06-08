@@ -1,0 +1,33 @@
+.containers {
+    width: 400px;
+    height: 400px;
+    /* border: 1px solid black; */
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin-left: 380px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a {
+    color: green;
+    font-size: larger;
+}
+
+.containers form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.container {
+    height: 600px;
+}
+
+.full {
+    background-color: lightgreen;
+}

@@ -1,0 +1,15 @@
+.cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    border-radius: 20px;
+    /* border: 1px solid gray; */
+    overflow: hidden;
+    padding: 6px;
+    background-color: rgba(3, 3, 3, 0.1);
+    height: 120px;
+    margin: 10px;
+    margin-left: 3%;
+}

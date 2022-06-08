@@ -1,0 +1,17 @@
+<h1 class="text-dark" style="margin-left: 30px;">Your Cart <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </svg></h1>
+<div class="cart" *ngFor="let items of temparr">
+    <div class="img">
+        <img src="{{items.product_image}}" style="height: 150px;width: 150px;border-radius: 20px;">
+    </div>
+    <div class="name">
+        <h4>{{items.product_name}}</h4>
+    </div>
+    <div class="price">
+        <h4>&#8377;{{items.product_price}}</h4>
+    </div>
+    <div>
+        <button class="btn btn-dark" (click)="delcart(items.id)">Remove Item From Cart</button>
+    </div>
+</div>

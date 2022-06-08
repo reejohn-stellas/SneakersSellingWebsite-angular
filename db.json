@@ -1,0 +1,209 @@
+{
+  "posts": [
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/04/1-2-37-850x816.jpg",
+      "product_name": "Nike GIANNIS IMMORTALITY ‘ FORCE FIELD ‘",
+      "product_price": "6795",
+      "new_arrivals": 1,
+      "sale": 0,
+      "gender": "M",
+      "id": 1
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-45-850x816.jpg",
+      "product_name": "adidas originals  OZWEEGO SHOES ‘ GREY ONE / OFF WHITE ‘",
+      "product_price": "10999",
+      "new_arrivals": 1,
+      "sale": 0,
+      "gender": "M",
+      "id": 2
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/lthr1ecom-850x850.jpg",
+      "product_name": "Reebok EAMES CLASSIC LEATHER ‘ DARK BROWN ‘",
+      "product_price": "9999",
+      "new_arrivals": 1,
+      "sale": 0,
+      "gender": "M",
+      "id": 3
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-32-850x816.jpg",
+      "product_name": "adidas originals  ADI2000 ‘ ENERGY INK / CLOUD WHITE ‘",
+      "product_price": "9999",
+      "new_arrivals": 1,
+      "sale": 0,
+      "gender": "M",
+      "id": 4
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-2-850x816.jpg",
+      "product_name": "Nike DUNK LOW PRM ‘ BLACK / TUMBLED GREY ‘",
+      "product_price": "6999",
+      "new_arrivals": 1,
+      "sale": 0,
+      "gender": "M",
+      "id": 5
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2021/08/38102605-1-850x850.jpg",
+      "product_name": "Puma EASY RIDER II ELEKTRO POOL",
+      "product_price": "5249",
+      "new_arrivals": 1,
+      "sale": 0,
+      "gender": "M",
+      "id": 6
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2021/08/38116401-1-850x850.jpg",
+      "product_name": "Puma RUDOLF DASSLER LEGACY SUEDE VTG LAUNDRY BOYS",
+      "product_price": "6749",
+      "new_arrivals": 1,
+      "sale": 0,
+      "gender": "M",
+      "id": 7
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2021/08/38102605-1-850x850.jpg",
+      "product_name": "Puma EASY RIDER II ELEKTRO POOL",
+      "product_price": "5249",
+      "new_arrivals": 1,
+      "sale": 0,
+      "gender": "M",
+      "id": 8
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2021/06/01-23-850x850.jpg",
+      "product_name": "Puma MIRAGE MOX VISION APRICOT BLUSH",
+      "product_price": "5599",
+      "new_arrivals": 0,
+      "sale": 1,
+      "gender": "F",
+      "id": 9
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-27-850x816.jpg",
+      "product_name": "Nike AIR JORDAN 6 ‘ MIDNIGHT NAVY ‘",
+      "product_price": "15995",
+      "new_arrivals": 0,
+      "sale": 1,
+      "gender": "F",
+      "id": 10
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-30-850x816.jpg",
+      "product_name": "Nike WMN’S AIR FORCE 1 ‘ OUR FORCE 1 ‘",
+      "product_price": "8695",
+      "new_arrivals": 0,
+      "sale": 1,
+      "gender": "F",
+      "id": 11
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-31-850x816.jpg",
+      "product_name": "adidas originals  STAN SMITH PRIDE",
+      "product_price": "9999",
+      "new_arrivals": 0,
+      "sale": 1,
+      "gender": "F",
+      "id": 12
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-17-850x816.jpg",
+      "product_name": "adidas originals  M&M’S BRAND FORUM LOW 84 ‘ RED ‘",
+      "product_price": "14999",
+      "new_arrivals": 0,
+      "sale": 1,
+      "gender": "F",
+      "id": 13
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-7-850x816.jpg",
+      "product_name": "Reebok LA CASA DE PAPEL F/S HI",
+      "product_price": "7999",
+      "new_arrivals": 0,
+      "sale": 1,
+      "gender": "F",
+      "id": 14
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-4-1-850x816.jpg",
+      "product_name": "Reebok CLASSIC LEATHER ‘ CLOUD WHITE / CORE BLACK ‘",
+      "product_price": "6999",
+      "new_arrivals": 0,
+      "sale": 1,
+      "gender": "F",
+      "id": 15
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/04/1-2-27-850x816.jpg",
+      "product_name": "Reebok INSTAPUMP FURY ZONE ‘ CORE BLACK/DYNAMIC RED ‘",
+      "product_price": "10999",
+      "new_arrivals": 0,
+      "sale": 1,
+      "gender": "F",
+      "id": 16
+    }
+  ],
+  "signup": [
+    {
+      "email": "abc",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "xyz",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "pqr",
+      "password": "222",
+      "id": 3
+    },
+    {
+      "email": "ree",
+      "password": "345",
+      "id": 4
+    },
+    {
+      "email": "ben",
+      "password": "452",
+      "id": 5
+    },
+    {
+      "email": "reeice03@gmail.com",
+      "password": "Abcd123@",
+      "id": 6
+    },
+    {
+      "email": "reejohn",
+      "password": "",
+      "id": 7
+    },
+    {
+      "email": "reeice03@gm",
+      "password": "Abcd123@",
+      "id": 8
+    },
+    {
+      "email": "reeice03@gmail.com",
+      "password": "Abcd123@",
+      "id": 9
+    }
+  ],
+  "cart": [
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2021/08/38102605-1-850x850.jpg",
+      "product_name": "Puma EASY RIDER II ELEKTRO POOL",
+      "product_price": "5249",
+      "id": 1
+    },
+    {
+      "product_image": "https://superkicks.in/wp-content/uploads/2022/05/1-27-850x816.jpg",
+      "product_name": "Nike AIR JORDAN 6 ‘ MIDNIGHT NAVY ‘",
+      "product_price": "15995",
+      "id": 2
+    }
+  ]
+}

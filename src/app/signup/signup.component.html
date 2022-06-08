@@ -1,0 +1,20 @@
+<div class="full" style="height: 100%;width:100%;">
+    <div class="container">
+        <h3 class="text-light" style="position: relative;top:40px;left:375px;">SignUp Form:</h3>
+
+        <div class="containers">
+
+            <form [formGroup]="forms"> Email:<input type="email" class="form-control" formControlName="email" [class.is-invalid]="forms.controls['email'].invalid && forms.controls['email'].touched" [class.is-valid]="forms.controls['email'].valid && forms.controls['email'].touched">
+                <p class="text-danger" *ngIf="forms.controls['email'].invalid &&forms.controls['email'].touched ">invalid email</p>
+                Password:
+
+                <input type="text" class="form-control" formControlName="password" [class.is-valid]="forms.controls['password'].valid && forms.controls['password'].touched" [class.is-invalid]="forms.controls['password'].invalid && forms.controls['password'].touched">
+                <small class="text-danger" *ngIf="forms.controls['password'].invalid && forms.controls['password'].touched">Invalid Password</small> Date-of-Birth:
+                <input type="date" class="form-control" formControlName="date">
+                <button class="btn btn-success" [disabled]="forms.invalid" (click)="signup()">SIGNUP</button>
+
+                <a routerLink="/login" style="font-weight: bold;">Already an User Login here </a>
+            </form>
+        </div>
+    </div>
+</div>

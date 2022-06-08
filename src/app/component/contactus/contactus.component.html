@@ -1,0 +1,24 @@
+<h1 class="text-primary">Our Brands
+    <img src="../../../assets/images/nike.png" style="height:100px;">
+    <img src="../../../assets/images/puma-logo-png-21169.png" style="height:100px;">
+    <img src="../../../assets/images/reebok-logo-png-7036.png" style="height:100px;">
+    <img src="../../../assets/images/adidas-logo-png-2386.png" style="height:100px;">
+</h1>
+<div class="search-bar">
+    <input type="text" style="font-size: 25px;margin:6px;margin-left:30px;" placeholder="search Products here" [(ngModel)]="searchtext">
+
+
+</div>
+<div class="new_Arrivals">
+    <div class="cardss" *ngFor="let card of temparr|filterstring:searchtext">
+        <div class="card" style="width: 19rem;">
+            <img class="card-img-top" src="{{card.product_image}}" alt="Card image cap" height="250px">
+            <div class="card-body">
+                <h5 class="card-title" style="height: 80px; overflow:hidden">{{card.product_name}}</h5>
+                <p class="card-text">&#8377;{{card.product_price}}</p>
+
+            </div>
+            <button class="btn btn-dark" (click)="postcart([card.product_image,card.product_name,card.product_price])">Add to cart</button>
+        </div>
+    </div>
+</div>

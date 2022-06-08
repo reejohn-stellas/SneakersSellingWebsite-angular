@@ -1,0 +1,22 @@
+.about-us {
+    display: flex;
+    flex-direction: row;
+}
+
+.right img {
+    position: relative;
+    top: -50px;
+    left: 30px;
+}
+
+.full {
+    background-color: black;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
