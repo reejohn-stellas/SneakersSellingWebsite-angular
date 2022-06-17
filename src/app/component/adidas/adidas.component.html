@@ -9,7 +9,15 @@
                 <p class="card-text">&#8377;{{card.product_price}}</p>
 
             </div>
-            <button class="btn btn-dark" (click)="postcart([card.product_image,card.product_name,card.product_price])">Add to cart</button>
+            <button class="btn btn-dark" *ngIf="card.count===0 else counts" (click)="postcart([card.product_image,card.product_name,card.product_price,card.id])">Add to cart</button>
+
+            <ng-template #counts>
+                <div>
+                    <button class="btn btn-dark " style="display:inline-block;width: 25%;" (click)="count(card.id,card.count,'sub')">-</button>
+                    <span style="display:inline-block;width: 50%;text-align:center;">{{card.count}}</span>
+                    <button class="btn btn-dark " style="display:inline-block;width: 25%;" (click)="count(card.id,card.count,'add')">+</button>
+                </div>
+            </ng-template>
         </div>
     </div>
 </div>

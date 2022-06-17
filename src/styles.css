@@ -1,12 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@600&display=swap');
 .card:hover {
     transform: scale(1.01);
 }
 
 .animation {
     animation: blink 0.5s ease-in-out infinite;
+}
+
+* {
+    font-family: 'Anek Malayalam', sans-serif
 }
 
 @keyframes blink {

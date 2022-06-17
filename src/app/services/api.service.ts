@@ -20,7 +20,10 @@ export class ApiService {
     return this.http.get<any>("http://localhost:3000/posts").pipe(map(res=>{return res}))
   }
   delpro(id:any){
-    return this.http.delete<any>("http://localhost:3000/posts/"+id).pipe(map(res=>{return res}))
+    return this.http.delete<any>("http://localhost:3000/posts"+id).pipe(map(res=>{return res}))
+  }
+  patchpro(id:any,count:any){
+    return this.http.patch<any>("http://localhost:3000/posts/"+id,count).pipe(map(res=>{return res}))
   }
   
 }

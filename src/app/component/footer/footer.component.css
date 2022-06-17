@@ -49,9 +49,9 @@ img {
 
 .copyright {
     margin: 10px;
-    position: relative;
-    left: 32%;
     font-weight: bold;
+    position: relative;
+    left: 30%;
 }
 
 em {

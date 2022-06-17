@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
     email:this.r.control('',[Validators.required,Validators.email]),
     password:this.r.control('',[Validators.required,Validators.pattern(this.password)])
   })
+  alert=false
   login(){
     this.service.getpro().subscribe(res=>{
       const user=res.find((x:any)=>{
@@ -30,6 +31,7 @@ export class LoginComponent implements OnInit {
       }
       else{
         this.router.navigate(['/login'])
+        this.alert=true        
       }
     })
   }

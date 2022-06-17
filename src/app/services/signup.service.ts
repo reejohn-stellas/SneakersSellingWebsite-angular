@@ -13,7 +13,6 @@ export class SignupService {
     return this.http.post<any>("http://localhost:3000/signup",data).pipe(map(res=>{return res}))
   }
   getpro(){
-    
-    return this.http.get<any>("http://localhost:3000/signup").pipe(map(res=>{return res}))
+        return this.http.get<any>("http://localhost:3000/signup").pipe(map(res=>{return res}))
   }
 }

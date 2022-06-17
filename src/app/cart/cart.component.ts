@@ -1,5 +1,6 @@
 import { temporaryAllocator } from '@angular/compiler/src/render3/view/util';
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../services/api.service';
 import { CartService } from '../services/cart.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { CartService } from '../services/cart.service';
 })
 export class CartComponent implements OnInit {
 
-  constructor(private cart:CartService) { }
+  constructor(private cart:ApiService) { }
 
   ngOnInit(): void {
     this.getcart();
@@ -18,11 +19,11 @@ export class CartComponent implements OnInit {
   temparr:any=[]
  
   getcart(){
-    this.cart.getcart().subscribe(res=>{this.temparr=res})
+    this.cart.getpro().subscribe(res=>{this.temparr=res})
     
   }
  delcart(id:any){
-  this.cart.delcart(id).subscribe(res=>{this.getcart()})
+  this.cart.patchpro(id,{count:0}).subscribe(res=>{this.getcart()})
  }
  len:any;
 

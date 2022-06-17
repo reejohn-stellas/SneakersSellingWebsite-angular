@@ -27,6 +27,9 @@ import { SearchfilterPipe } from './pipes/searchfilter.pipe';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { CartComponent } from './cart/cart.component';
+import { CartPipe } from './cart.pipe';
+import { CartsPipe } from './pipes/carts.pipe';
+import { PricePipe } from './pipes/price.pipe';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { CartComponent } from './cart/cart.component';
     SearchfilterPipe,
     LoginComponent,
     SignupComponent,
-    CartComponent
+    CartComponent,
+    CartPipe,
+    CartsPipe,
+    PricePipe
   ],
   imports: [
     BrowserModule,

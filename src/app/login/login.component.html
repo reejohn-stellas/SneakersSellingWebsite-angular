@@ -1,15 +1,22 @@
 <div class="full">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="alert">
+        <strong>Invalid User!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
     <div class="container">
-        <h2 class="text-light" style="position: relative;top:80px;left:375px;">Login Form:</h2>
+        <h2 class="text-light">Login Form:</h2>
 
         <div class="containers">
             <form [formGroup]="forms"> Email :<input type="text" class="form-control" formControlName="email" [class.is-valid]="forms.controls['email'].valid && forms.controls['email'].touched" [class.is-invalid]="forms.controls['email'].invalid && forms.controls['email'].touched">
                 <span class="text-danger" *ngIf="forms.controls['email'].invalid && forms.controls['email'].touched">Invalid Email</span> Password: <input type="text" class="form-control" formControlName="password" [class.is-valid]="forms.controls['password'].valid && forms.controls['password'].touched"
                     [class.is-invalid]="forms.controls['password'].invalid && forms.controls['password'].touched">
-                <span class="text-danger" *ngIf="forms.controls['password'].invalid && forms.controls['password'].touched">Invalid Email</span>
-                <button class="btn btn-primary" [disabled]="forms.invalid" (click)="login()">Login</button>
+                <span class="text-danger" *ngIf="forms.controls['password'].invalid && forms.controls['password'].touched">Invalid Password</span>
 
-                <a routerLink="/signup" style="font-weight:bold ;">NEW USER ? SIGN UP HERE </a>
+                <button class="btn" [disabled]="forms.invalid" (click)="login()">Login</button>
+
+                <a routerLink="/signup" style="font-weight:bold ;">new user ? click here</a>
             </form>
         </div>
     </div>

@@ -19,13 +19,21 @@ export class PumaComponent implements OnInit {
   getpro(){
     this.service.getpro().subscribe((res)=>{this.temparr=res})
   }
+  counts:any=0;
+  count(id:any,count:any,type:string){
+    type==='add'?count++:count--
+    this.counts=count
+    this.service.patchpro(id,{count:count}).subscribe((res)=>{this.getpro()})
+  }
   items:ModModule=new ModModule()
   postcart(data:any[]){
     // console.log(data)
     this.items.product_image=data[0]
     this.items.product_name=data[1]
     this.items.product_price=data[2]
-    this.cart.postcart(this.items).subscribe(res=>{alert("Added TO cart")})
+    this.items.count=this.counts
+    this.service.patchpro(data[3],{count:1}).subscribe((res)=>{this.getpro()})
+    this.cart.postcart(this.items).subscribe(res=>{this.getpro()})
   }
 
 
